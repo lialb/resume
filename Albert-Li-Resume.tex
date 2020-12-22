@@ -1,0 +1,260 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume and Jake Gutierrez's Resume
+% License : MIT
+%
+% Edited by Albert Li
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+\usepackage[default]{raleway}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+% \usepackage[default]{lato}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}
+  \item
+    \begin{tabular*}{1\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \large{\textbf{#1}} & \small{\textbf{#2}} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \small{\textbf{#2}} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+
+    \textbf{\Huge \scshape \textnormal{\textbf{Albert} Yiliang \textbf{Li}}} \\ \vspace{8pt}
+    \small{
+    \href{mailto:albert.yiliang@gmail.com}{albert.yiliang@gmail.com} $|$ 309-857-5018 $|$  
+    % \href{https://github.com/albearli}{github.com/albearli} $|$
+    \href{https://linkedin.com/in/albearli}{linkedin.com/in/albearli} $|$
+    \href{https://lialbert.com}{lialbert.com}}
+\end{center}
+% \vspace*{-\baselineskip}
+\vspace{-15pt}
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Illinois at Urbana-Champaign}{May 2022} % $|$ \textnormal{Grainger College of Engineering}}{May 2022}
+      {\textnormal{\textbf{B.S. in Computer Science}, Grainger College of Engineering $|$ Minor in Statistics}}{\textnormal{GPA: \textbf{3.92} / 4.0}}
+      % \vspace{6pt}
+      
+    % \small{\textbf{Relevant Coursework}{: Distributed Systems, Algorithms, System Programming, Computer Security, Database Systems, UI Design, Data Structures, Computer Architecture, Bioinformatics, Programming Languages, Applied Statistics}}
+    % \small{\textbf{Courses}{: Distributed Systems, Computer Security, Database Systems, UI Design, Algorithms, System Programming}}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+% \section{Skills}
+%  \begin{itemize}[leftmargin=0in, label={}]
+%     \small{\item{
+%      \textbf{Languages}{: Python, C++, JavaScript, TypeScript, Java, SQL, Shell} \\
+%          \textbf{Technologies}{: Angular, React, Node.js, Flask, MySQL, MongoDB, Neo4j, Flutter, Linux, Git, Kubernetes}}}
+%  \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+ \resumeSubheading
+      {Facebook} % Company
+      {August 2021 --- November 2021} % Date
+      {Software Engineer Intern} % Position
+      {Menlo Park, CA} % location
+      \resumeItemListStart
+        \resumeItem{Incoming SWE Intern at Facebook for Fall 2021}
+        \resumeItem{Incoming SWE Intern at Facebook for Fall 2021}
+        \resumeItem{Incoming SWE Intern at Facebook for Fall 2021}
+        \resumeItem{Incoming SWE Intern at Facebook for Fall 2021}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Salesforce: Tableau Software} % Company
+      {May 2021 --- August 2021} % Date
+      {Software Engineer Intern} % Position
+      {Seattle, WA} % Location
+      \resumeItemListStart
+        \resumeItem{Incoming SWE Intern at Tableau for Summer 2021}
+        \resumeItem{Incoming SWE Intern at Tableau for Summer 2021}
+        \resumeItem{Incoming SWE Intern at Tableau for Summer 2021}
+        \resumeItem{Incoming SWE Intern at Tableau for Summer 2021}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Motorola Solutions} % Company
+      {June 2020 --- May 2021} % Date
+      {Software Engineer Intern} % Position
+      {Champaign, IL} % Location
+      \resumeItemListStart
+        \resumeItem{Designed ExpressJS backend cloud service for a radio tower monitoring mobile app, integrated with an Apache Kafka stream for real time notifications, Azure SQL Server, and Kubernetes }
+        \resumeItem{Assisted in building CI/CD pipeline for Node services in Docker and K8 clusters on Azure DevOps}
+        % \resumeItem{Assisted in building CI/CD pipeline for Azure SQL Server, Node.js, and mobile apps in Docker and K8 clusters on Azure DevOps, automating API unit testing and deployment to Google Play Store and Apple App Store}
+        \resumeItem{Improved phone battery life and server load by caching recurring results in SQLite databases on mobile devices}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Caterpillar} % Company
+      {August 2019 --- May 2020} % Date
+      {Software Engineering Co-Op} % Position
+      {Champaign, IL} % Location
+      \resumeItemListStart
+        \resumeItem{Increased efficiency of data lookup from 30+ minutes to seconds for 1100+ engineers by building an internal Angular web platform with a Python API, MySQL connection, and OAuth2 authentication }
+        \resumeItem{Cooperated with users and customers to build dynamic data visualizations of financial and equipment data}
+      \resumeItemListEnd
+      
+      \resumeSubheading
+      {Ameren} % Company
+      {May 2019 --- August 2019} % Date
+      {Software Engineering Intern} % Position
+      {Champaign, IL} % Location
+      \resumeItemListStart
+        \resumeItem{Created a project management web dashboard for analysts using Angular, Flask API, and OracleDB}
+        
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{UIUC Diversity} $|$ \emph{Data visualization showing racial disparities of every major}}{\textbf{\small{\href{https://lialbert.com/uiuc-diversity}{lialbert.com/uiuc-diversity}}}}
+          \resumeItemListStart
+            \resumeItem{Processed 15 years of data to build dynamic visualizations of demographics using d3.js, TypeScript, and Python}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Tangram} $|$ \emph{Android/iOS social media app with hyperlocal video feeds
+        }}{\textbf{\small{\href{https://github.com/albearli/tangram}{github.com/albearli/tangram}}}}
+          \resumeItemListStart
+            \resumeItem{ Integrated MySQL and Neo4j DB schema on AWS, creating 4-directional swiping of videos based on location }
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%------------- TEACHING--------------
+\section{Teaching}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{CS 196: Freshman Honors} $|$ \emph{Course Staff}}{January 2020 --- May 2021}
+          \resumeItemListStart
+            \resumeItem{Mentored 3 groups of students as Project Manager to produce full stack apps: video transcription web service in React, mobile app giving safest walking routes in cities, and mood tracking mental health web app in React}
+           % \resumeItem{Coached and organized weekly software development life cycle, agile processes, version control, and code style}
+            \resumeItem{ Created and deployed website (\textbf{\href{http://cs196.cs.illinois.edu}{cs196.cs.illinois.edu}}) on Apache and built grading automation for 200 students}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{CS 125: Introduction to Computer Science} $|$ \emph{Course Assistant}}{January 2019 --- May 2019}
+          \resumeItemListStart
+            \resumeItem{  Directed weekly lab sections of 30 students and held office hours and forum for class of 500+ students }
+           
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C++, JavaScript, TypeScript, Java, SQL, Shell} \\
+         \textbf{Technologies}{: Angular, React, Node.js, Flask, MySQL, MongoDB, Neo4j, Flutter, Linux, Git, Kubernetes}}}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
