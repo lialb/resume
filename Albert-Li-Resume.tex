@@ -26,11 +26,11 @@
 %----------FONT OPTIONS----------
 % sans-serif
 % \usepackage[sfdefault]{FiraSans}
-\usepackage[default]{raleway}
+% \usepackage[default]{raleway}
 % \usepackage[sfdefault]{roboto}
 % \usepackage[sfdefault]{noto-sans}
 % \usepackage[default]{sourcesanspro}
-% \usepackage[default]{lato}
+\usepackage[default]{lato}
 
 % serif
 % \usepackage{CormorantGaramond}
@@ -41,6 +41,8 @@
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
+\renewcommand{\mddefault}{l} % switch default weight to light
+
 
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
@@ -57,8 +59,10 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-10pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-10pt}
+  \raggedright
+  \normalsize
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -111,22 +115,21 @@
 
 %----------HEADING----------
 \begin{center}
-
-    \textbf{\Huge \scshape \textnormal{\textbf{Albert} Yiliang \textbf{Li}}} \\ \vspace{8pt}
+    \textbf{\Huge \textnormal{Albert} \fontseries{ul}\selectfont{Yiliang} \textnormal{Li}} \\ \vspace{8pt}
     \small{
     \href{mailto:albert.yiliang@gmail.com}{albert.yiliang@gmail.com} $|$ 309-857-5018 $|$  
-    % \href{https://github.com/albearli}{github.com/albearli} $|$
-    \href{https://linkedin.com/in/albearli}{linkedin.com/in/albearli} $|$
+    \href{https://linkedin.com/in/albs}{linkedin.com/in/albs} $|$
     \href{https://lialbert.com}{lialbert.com}}
 \end{center}
 % \vspace*{-\baselineskip}
 \vspace{-15pt}
 %-----------EDUCATION-----------
-\section{Education}
+\section{EDUCATION}
   \resumeSubHeadingListStart
     \resumeSubheading
       {University of Illinois at Urbana-Champaign}{May 2022} % $|$ \textnormal{Grainger College of Engineering}}{May 2022}
-      {\textnormal{\textbf{B.S. in Computer Science}, Grainger College of Engineering $|$ Minor in Statistics}}{\textnormal{GPA: \textbf{3.92} / 4.0}}
+      {\textnormal{\textbf{Bachelor of Science in Computer Science}, Grainger College of Engineering $|$ Minor in Statistics}}
+      {\textnormal{GPA: \textbf{3.93} / 4.00}}
       % \vspace{6pt}
       
     % \small{\textbf{Relevant Coursework}{: Distributed Systems, Algorithms, System Programming, Computer Security, Database Systems, UI Design, Data Structures, Computer Architecture, Bioinformatics, Programming Languages, Applied Statistics}}
@@ -143,7 +146,7 @@
 %  \end{itemize}
 
 %-----------EXPERIENCE-----------
-\section{Experience}
+\section{EXPERIENCE}
   \resumeSubHeadingListStart
  \resumeSubheading
       {Facebook} % Company
@@ -214,7 +217,7 @@
   \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
-\section{Projects}
+\section{PROJECTS}
     \resumeSubHeadingListStart
       \resumeProjectHeading
           {\textbf{UIUC Diversity} $|$ \emph{Data visualization showing racial disparities of every major}}{\textbf{\small{\href{https://lialbert.com/uiuc-diversity}{lialbert.com/uiuc-diversity}}}}
@@ -225,12 +228,12 @@
           {\textbf{Tangram} $|$ \emph{Android/iOS social media app with hyperlocal video feeds
         }}{\textbf{\small{\href{https://github.com/albearli/tangram}{github.com/albearli/tangram}}}}
           \resumeItemListStart
-            \resumeItem{ Integrated MySQL and Neo4j DB schema on AWS, creating 4-directional swiping of videos based on location }
+            \resumeItem{ Integrated MySQL and Neo4j DB schema on AWS with API, creating 4-directional swiping of videos based on location }
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
 %------------- TEACHING--------------
-\section{Teaching}
+\section{INVOLVEMENT}
     \resumeSubHeadingListStart
       \resumeProjectHeading
           {\textbf{CS 196: Freshman Honors} $|$ \emph{Course Staff}}{January 2020 --- May 2021}
@@ -249,7 +252,7 @@
 
 
 %-----------PROGRAMMING SKILLS-----------
-\section{Skills}
+\section{SKILLS}
  \begin{itemize}[leftmargin=0in, label={}]
     \small{\item{
      \textbf{Languages}{: Python, C++, JavaScript, TypeScript, Java, SQL, Shell} \\
