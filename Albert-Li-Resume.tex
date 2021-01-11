@@ -7,7 +7,7 @@
 % Edited by Albert Li
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -59,16 +59,17 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-10pt}
+  \vspace{0pt}
   \raggedright
   \normalsize
-}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+}{}{0em}{}[\color{black}\titlerule \vspace{0pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
 %-------------------------
 % Custom commands
+
 \newcommand{\resumeItem}[1]{
   \item\small{
     {#1 \vspace{-2pt}}
@@ -80,7 +81,7 @@
   \item
     \begin{tabular*}{1\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \large{\textbf{#1}} & \small{\textbf{#2}} \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#3} & \textit{\small#4} \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -98,6 +99,7 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
@@ -105,7 +107,7 @@
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -115,25 +117,26 @@
 
 %----------HEADING----------
 \begin{center}
-    \textbf{\Huge \textnormal{Albert} \fontseries{ul}\selectfont{Yiliang} \textnormal{Li}} \\ \vspace{8pt}
+    \textbf{\fontsize{32}{36} \textnormal{Albert} \fontseries{ul}\selectfont{Yiliang} \textnormal{Li}} \\ \vspace{8pt}
     \small{
     \href{mailto:albert.yiliang@gmail.com}{albert.yiliang@gmail.com} $|$ 309-857-5018 $|$  
     \href{https://linkedin.com/in/albs}{linkedin.com/in/albs} $|$
     \href{https://lialbert.com}{lialbert.com}}
 \end{center}
 % \vspace*{-\baselineskip}
-\vspace{-15pt}
+\vspace{-20pt}
 %-----------EDUCATION-----------
 \section{EDUCATION}
   \resumeSubHeadingListStart
     \resumeSubheading
       {University of Illinois at Urbana-Champaign}{May 2022} % $|$ \textnormal{Grainger College of Engineering}}{May 2022}
-      {\textnormal{\textbf{Bachelor of Science in Computer Science}, Grainger College of Engineering $|$ Minor in Statistics}}
+      {\textnormal{\textbf{B.S. in Computer Science}, Minor in Statistics $|$ James Scholar Honors in Engineering}}
       {\textnormal{GPA: \textbf{3.93} / 4.00}}
-      % \vspace{6pt}
+      \vspace{6pt}
       
     % \small{\textbf{Relevant Coursework}{: Distributed Systems, Algorithms, System Programming, Computer Security, Database Systems, UI Design, Data Structures, Computer Architecture, Bioinformatics, Programming Languages, Applied Statistics}}
-    % \small{\textbf{Courses}{: Distributed Systems, Computer Security, Database Systems, UI Design, Algorithms, System Programming}}
+    \small{\textbf{Relevant Courses}{: Distributed Systems, Computer Security, Database Systems, UI Design, Algorithms, System Programming}}
+    \vspace{-6pt}
   \resumeSubHeadingListEnd
 
 
@@ -203,14 +206,25 @@
         \resumeItem{Increased efficiency of data lookup from 30+ minutes to seconds for 1100+ engineers by building an internal Angular web platform with a Python API, MySQL connection, and OAuth2 authentication }
         \resumeItem{Cooperated with users and customers to build dynamic data visualizations of financial and equipment data}
       \resumeItemListEnd
-      
+
+    \resumeSubheading
+      {CS 196: Freshman Honors} % Company
+      {January 2020 --- May 2021} % Date
+      {Course Staff} % Position
+      {UIUC Deparment of Computer Science} % Location
+      \resumeItemListStart
+        \resumeItem{Mentored 3 groups of students as Project Manager to produce full stack apps: video transcription web service in React, mobile app giving safest walking routes in cities, and mood tracking mental health web app in React}
+        % \resumeItem{Coached and organized weekly software development life cycle, agile processes, version control, and code style}
+        \resumeItem{Created and deployed website (\textbf{\href{http://cs196.cs.illinois.edu}{cs196.cs.illinois.edu}}) on Apache and built grading automation for 200 students}
+      \resumeItemListEnd
+
       \resumeSubheading
       {Ameren} % Company
       {May 2019 --- August 2019} % Date
       {Software Engineering Intern} % Position
       {Champaign, IL} % Location
       \resumeItemListStart
-        \resumeItem{Created a project management web dashboard for analysts using Angular, Flask API, and OracleDB}
+        \resumeItem{Created a project management web dashboard for analysts / managers using Angular, Flask API, and OracleDB}
         
       \resumeItemListEnd
 
@@ -233,22 +247,22 @@
     \resumeSubHeadingListEnd
 
 %------------- TEACHING--------------
-\section{INVOLVEMENT}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{CS 196: Freshman Honors} $|$ \emph{Course Staff}}{January 2020 --- May 2021}
-          \resumeItemListStart
-            \resumeItem{Mentored 3 groups of students as Project Manager to produce full stack apps: video transcription web service in React, mobile app giving safest walking routes in cities, and mood tracking mental health web app in React}
-           % \resumeItem{Coached and organized weekly software development life cycle, agile processes, version control, and code style}
-            \resumeItem{ Created and deployed website (\textbf{\href{http://cs196.cs.illinois.edu}{cs196.cs.illinois.edu}}) on Apache and built grading automation for 200 students}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{CS 125: Introduction to Computer Science} $|$ \emph{Course Assistant}}{January 2019 --- May 2019}
-          \resumeItemListStart
-            \resumeItem{  Directed weekly lab sections of 30 students and held office hours and forum for class of 500+ students }
+% \section{INVOLVEMENT}
+%     \resumeSubHeadingListStart
+%       \resumeProjectHeading
+%           {\textbf{CS 196: Freshman Honors} $|$ \emph{Course Staff}}{January 2020 --- May 2021}
+%           \resumeItemListStart
+%             \resumeItem{Mentored 3 groups of students as Project Manager to produce full stack apps: video transcription web service in React, mobile app giving safest walking routes in cities, and mood tracking mental health web app in React}
+%            % \resumeItem{Coached and organized weekly software development life cycle, agile processes, version control, and code style}
+%             \resumeItem{Created and deployed website (\textbf{\href{http://cs196.cs.illinois.edu}{cs196.cs.illinois.edu}}) on Apache and built grading automation for 200 students}
+%           \resumeItemListEnd
+%       \resumeProjectHeading
+%           {\textbf{CS 125: Introduction to Computer Science} $|$ \emph{Course Assistant}}{January 2019 --- May 2019}
+%           \resumeItemListStart
+%             \resumeItem{Directed weekly lab sections of 30 students and held office hours and forum for class of 500+ students }
            
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
+%           \resumeItemListEnd
+%     \resumeSubHeadingListEnd
 
 
 %-----------PROGRAMMING SKILLS-----------
@@ -256,7 +270,7 @@
  \begin{itemize}[leftmargin=0in, label={}]
     \small{\item{
      \textbf{Languages}{: Python, C++, JavaScript, TypeScript, Java, SQL, Shell} \\
-         \textbf{Technologies}{: Angular, React, Node.js, Flask, MySQL, MongoDB, Neo4j, Flutter, Linux, Git, Kubernetes}}}
+     \textbf{Technologies}{: Angular, React, Node.js, Flask, MySQL, MongoDB, Neo4j, Flutter, Linux, Git, Kubernetes}}}
  \end{itemize}
 
 %-------------------------------------------
