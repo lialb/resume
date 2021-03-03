@@ -123,7 +123,8 @@
 
 %----------HEADING----------
 \begin{center}
-    \textbf{\fontsize{32}{36} \textnormal{Albert}\fontseries{ul}\selectfont{ Yiliang }\textnormal{Li}} \\ \vspace{8pt}
+    % \textbf{\fontsize{32}{36} \textnormal{Albert}\fontseries{ul}\selectfont{ Yiliang }\textnormal{Li}} \\ \vspace{8pt}
+    \textbf{\fontsize{32}{36} \textnormal{Albert Li}} \\ \vspace{8pt}
     \small{
     \href{mailto:albert.yiliang@gmail.com}{albert.yiliang@gmail.com} $|$ 309-857-5018 $|$  
     \href{https://linkedin.com/in/albs}{linkedin.com/in/albs} $|$
@@ -141,7 +142,7 @@
       \vspace{6pt}
       
     % \small{\textbf{Relevant Coursework}{: Distributed Systems, Algorithms, System Programming, Computer Security, Database Systems, UI Design, Data Structures, Computer Architecture, Bioinformatics, Programming Languages, Applied Statistics}}
-    \small{\textbf{Relevant Courses}{: Distributed Systems, Computer Security, Database Systems, UI Design, Algorithms, System Programming}}
+    \small{\textbf{Relevant Courses}{: Distributed Systems, Computer Security, Database Systems, UI Design, Algorithms, System Programming, Bioinformatics}}
     \vspace{-6pt}
   \resumeSubHeadingListEnd
 
@@ -157,7 +158,7 @@
 %-----------EXPERIENCE-----------
 \section{EXPERIENCE}
   \resumeSubHeadingListStart
- \resumeSubheading
+    \resumeSubheading
       {Facebook} % Company
       {August 2021 --- November 2021} % Date
       {Software Engineer Intern} % Position
@@ -200,9 +201,19 @@
         \resumeItem{Designed Node.js backend cloud service for a radio tower monitoring mobile app, integrated with an Apache Kafka stream for real time notifications, Azure SQL Server, and Kubernetes }
         \resumeItem{Architected CI/CD pipeline for Node services in Docker and K8 clusters on Azure DevOps}
         % \resumeItem{Assisted in building CI/CD pipeline for Azure SQL Server, Node.js, and mobile apps in Docker and K8 clusters on Azure DevOps, automating API unit testing and deployment to Google Play Store and Apple App Store}
-        \resumeItem{Developed APIs in .NET to query Azure DataLake documents in radio event stream}
+        \resumeItem{Developed thread safe APIs in C\# and .NET to query Azure Data Lake documents in Motorola radio event stream}
         \resumeItem{Improved phone battery life and server load by caching recurring results in SQLite databases on mobile devices}
     \resumeItemListEnd
+
+    \resumeSubheading
+      {Caterpillar} % Company
+      {August 2019 --- May 2020} % Date
+      {Software Engineering Co-Op} % Position
+      {Champaign, IL} % Location
+      \resumeItemListStart
+        \resumeItem{Increased efficiency of machinery data lookup from minutes to seconds for 1100+ engineers by building an internal Angular web platform with a Python API, MySQL connection, and OAuth2 authentication }
+        \resumeItem{Built custom dynamic data visualizations of financial and equipment data in TypeScript}
+      \resumeItemListEnd
 
     \resumeSubheading
       {UIUC Department of Computer Science} % Company
@@ -210,23 +221,12 @@
       {Course Staff --- CS 196: Freshman Honors} % Position
       {Urbana, IL} % Location
       \resumeItemListStart
-        \resumeItem{Mentored 3 groups of students as Project Manager and organized weekly meetings to produce full stack apps: mobile app giving safest walking routes in cities, a video transcription React web platform, and mood tracking mental health web app}
-
+        \resumeItem{Mentored 5 groups of students as Project Manager and organized weekly meetings to produce full stack apps: mobile app giving safest walking routes in cities, a video transcription React web platform, mood tracking mental health web app, and more}
         % \resumeItem{Coached and organized weekly software development life cycle, agile processes, version control, and code style}
-        \resumeItem{Created and deployed website (\textbf{\href{https://cs196.cs.illinois.edu}{cs196.cs.illinois.edu}}) on Apache HTTP Server and built grading automation for 200 students}
+        \resumeItem{Created and deployed website (\textbf{\href{https://cs196.cs.illinois.edu}{cs196.cs.illinois.edu}}) on Apache HTTP Server and built grading infrastructure for 200 students}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Caterpillar} % Company
-      {August 2019 --- May 2020} % Date
-      {Software Engineering Co-Op} % Position
-      {Champaign, IL} % LocationAlbertYiliangLialbert
-      \resumeItemListStart
-        \resumeItem{Increased efficiency of machinery data lookup from minutes to seconds for 1100+ engineers by building an internal Angular web platform with a Python API, MySQL connection, and OAuth2 authentication }
-        \resumeItem{Built custom dynamic data visualizations of financial and equipment data in TypeScript}
-      \resumeItemListEnd
-
-      \resumeSubheading
       {Ameren} % Company
       {May 2019 --- August 2019} % Date
       {Software Engineering Intern} % Position
@@ -242,13 +242,14 @@
 \section{PROJECTS}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{UIUC Diversity} $|$ \emph{Data visualization showing racial disparities of every major}}{\textbf{\small{\href{https://lialbert.com/uiuc-diversity}{lialbert.com/uiuc-diversity}}}}
+          {\textbf{UIUC Diversity} $|$ \emph{Data visualization showing racial disparities of every major}}
+          {\textbf{\small{\href{https://lialbert.com/uiuc-diversity}{lialbert.com/uiuc-diversity}}}}
           \resumeItemListStart
             \resumeItem{Processed 15 years of data to build dynamic visualizations of demographics using d3.js, TypeScript, and Python}
           \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{Tangram} $|$ \emph{Android/iOS social media app with hyperlocal video feeds
-        }}{\textbf{\small{\href{https://github.com/albearli/tangram}{github.com/albearli/tangram}}}}
+          {\textbf{Tangram} $|$ \emph{Android/iOS social media app with hyperlocal video feeds}}
+          {\textbf{\small{\href{https://github.com/albearli/tangram}{github.com/albearli/tangram}}}}
           \resumeItemListStart
             \resumeItem{ Integrated MySQL and Neo4j DB schema on AWS with API, creating 4-directional swiping of videos based on location }
           \resumeItemListEnd
