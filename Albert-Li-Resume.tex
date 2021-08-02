@@ -56,8 +56,11 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% \definecolor{main}{RGB}{31, 78, 47} % emerald green
-\definecolor{main}{RGB}{4, 99, 7} % emerald green
+% \definecolor{main}{RGB}{4, 99, 7} % emerald green
+\definecolor{main}{RGB}{46,139,87} % light green
+% \definecolor{main}{RGB}{255, 0, 191} % lyft pink
+% \definecolor{main}{RGB}{84,51,255} % stripe purple
+% \definecolor{main}{RGB}{246, 52, 63} 
 
 % Sections formatting
 \titleformat{\section}{
@@ -65,7 +68,7 @@
   \vspace{-5pt}
   \raggedright
   \normalsize
-  % \fontseries{ul}
+  \fontseries{ul}
 }{}{0em}{}[\color{main}{\titlerule[.8pt]} \vspace{0pt}]
 
 
@@ -87,6 +90,15 @@
     \begin{tabular*}{1\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \large{\textbf{#1}} & \small{\color{main}\textbf{#2}} \\
       \textit{\small#3} & \textit{\small#4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingSmall}[4]{
+  \vspace{-0pt}
+  \item
+    \begin{tabular*}{1\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \large{\textbf{#1}} & \small{\color{main}\textbf{#2}} \\
+      \textit{\footnotesize#3} & \textit{\footnotesize#4} \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -132,42 +144,40 @@
 % \vspace*{-\baselineskip}
 \vspace{-20pt}
 %-----------EDUCATION-----------
-\section{EDUCATION}
+\section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {University of Illinois at Urbana-Champaign}{May 2022} % $|$ \textnormal{Grainger College of Engineering}}{May 2022}
+      {University of Illinois at Urbana-Champaign}{May '22} % $|$ \textnormal{Grainger College of Engineering}}{May 2022}
       {\textnormal{\textbf{B.S. in Computer Science}, Minor in Statistics $|$ James Scholar Honors in College of Engineering}}
-      {\textnormal{GPA: \textbf{3.9} / 4.0}}
+      {\textnormal{GPA: \textbf{3.90} / 4.0}}
       \vspace{6pt}
 
       % \small{Minor in Statistics $|$ James Scholar Honors}
-      
-      % \small{\textbf{Relevant Coursework}{: Distributed Systems, Algorithms, System Programming, Computer Security, Database Systems, UI Design, Data Structures, Computer Architecture, Bioinformatics, Programming Languages, Applied Statistics}}
-      \small{\textbf{Relevant Courses}{: Distributed Systems, Computer Security, Database Systems, UI Design, Algorithms, System Programming}}
+      \footnotesize{\textbf{Relevant Courses}{: Distributed Systems, Computer Security, Database Systems, UI Design, Algorithms, System Programming, Data Structures}}
     \vspace{-6pt}
   \resumeSubHeadingListEnd
 
 
 %-----------EXPERIENCE-----------
-\section{EXPERIENCE}
+\section{Experience}
   \resumeSubHeadingListStart
-    \resumeSubheading
+    \resumeSubheadingSmall
       {Facebook} % Company
-      {August 2021 --- November 2021} % Date
+      {August '21 --- November '21} % Date
       {Software Engineer Intern} % Position
       {Menlo Park, CA} % location
       \resumeItemListStart
-        \resumeItem{Incoming SWE Intern at Facebook for Fall 2021}
+        \resumeItem{Working on the Facebook Stories team}
       \resumeItemListEnd
       
-    \resumeSubheading
+    \resumeSubheadingSmall
       {Salesforce: Tableau Software} % Company
-      {May 2021 --- August 2021} % Date
-      {Software Engineer Intern} % Position
+      {May '21 --- August '21} % Date
+      {Software Engineer Intern --- C++} % Position
       {Seattle, WA} % Location
       \resumeItemListStart
-        \resumeItem{Added features to C++ VizAPI microservice allowing JSON input to be parsed into visualizations}
-        % \resumeItem{Incoming SWE Intern at Tableau for Summer 2021}
+        \resumeItem{Added features to new VizAPI product that parses JSON input and outputs visualizations declaratively}
+        \resumeItem{Spearheaded telemetry infrastructure tracking product data for customer usage and adoption}
       \resumeItemListEnd
       
 % -----------Multiple Positions Heading-----------
@@ -180,23 +190,41 @@
 %    \resumeSubHeadingListEnd
 %-------------------------------------------
 
-    \resumeSubheading
+    \resumeSubheadingSmall
       {Motorola Solutions} % Company
-      {June 2020 --- May 2021} % Date
-      {Software Engineer Intern} % Position
+      {June '20 --- May '21} % Date
+      {Software Engineer Intern --- JavaScript, Express, SQL Server, Kubernetes, Azure, C\#} % Position
       {Champaign, IL} % Location
       \resumeItemListStart
         \resumeItem{Designed Node.js backend cloud service for a radio network monitoring mobile app, integrated with an Apache Kafka stream for real time notifications, Azure SQL Server, and Kubernetes }
         \resumeItem{Architected CI/CD pipeline for Node services in Docker and K8 clusters on Azure DevOps}
         % \resumeItem{Assisted in building CI/CD pipeline for Azure SQL Server, Node.js, and mobile apps in Docker and K8 clusters on Azure DevOps, automating API unit testing and deployment to Google Play Store and Apple App Store}
         \resumeItem{Developed a web API used by data scientists to efficiently query files from Azure DataLake filesystem in C\# and .NET}
-        % \resumeItem{Developed thread a safe web server in C\# and .NET to efficiently query Azure DataLake documents}
-        % \resumeItem{Improved phone battery life and server load by caching recurring results in SQLite databases on mobile devices}
     \resumeItemListEnd
 
-    \resumeSubheading
+    \resumeSubheadingSmall
+      {Caterpillar} % Company
+      {August '19 --- May '20} % Date
+      {Software Engineering Co-Op --- Angular, TypeScript, Python, Flask, MySQL} % Position
+      {Champaign, IL} % Location
+      \resumeItemListStart
+        % \resumeItem{Increased efficiency of data lookup from minutes to seconds for 1100+ engineers daily by building an internal Angular web platform with a Python API, MySQL connection, and OAuth2 authentication }
+        \resumeItem{Built an internal data querying web tool and API used by 1000+ engineers with 20k+ daily queries that reduced data lookup time from 10+ minutes to seconds}
+        \resumeItem{Constructed custom interactive data visualizations of financial and equipment data}
+      \resumeItemListEnd
+
+    \resumeSubheadingSmall
+      {Ameren} % Company
+      {May '19 --- August '19} % Date
+      {Software Engineering Intern --- Angular, TypeScript, Python, Flask, OracleDB, AWS} % Position
+      {Champaign, IL} % Location
+      \resumeItemListStart
+        \resumeItem{Modernized internal project management web dashboard for PMs and executives, replacing an older deprecated version}
+      \resumeItemListEnd
+
+    \resumeSubheadingSmall
       {UIUC Department of Computer Science} % Company
-      {January 2020 --- May 2021} % Date
+      {January '20 --- May '21} % Date
       {Course Staff --- CS 196: Freshman Honors} % Position
       {Urbana, IL} % Location
       \resumeItemListStart
@@ -206,30 +234,10 @@
         % \resumeItem{Managed 6 other staff members in building out class infrasturcture}
       \resumeItemListEnd
 
-    \resumeSubheading
-      {Caterpillar} % Company
-      {August 2019 --- May 2020} % Date
-      {Software Engineering Co-Op} % Position
-      {Champaign, IL} % Location
-      \resumeItemListStart
-        % \resumeItem{Increased efficiency of data lookup from minutes to seconds for 1100+ engineers daily by building an internal Angular web platform with a Python API, MySQL connection, and OAuth2 authentication }
-        \resumeItem{Built an internal Angular web tool and Python API used by 1100+ engineers daily that increased efficiency of data lookup from minutes to seconds}
-        \resumeItem{Constructed custom dynamic data visualizations of financial and equipment data in TypeScript}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Ameren} % Company
-      {May 2019 --- August 2019} % Date
-      {Software Engineering Intern} % Position
-      {Champaign, IL} % Location
-      \resumeItemListStart
-        \resumeItem{Created a project management web dashboard for internal management using Angular, Python Flask API, and OracleDB}
-      \resumeItemListEnd
-
   \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
-\section{PROJECTS}
+\section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
           {\textbf{UIUC Diversity} $|$ \emph{Data visualization showing racial disparities of every major}}
@@ -248,7 +256,7 @@
     \resumeSubHeadingListEnd
 
 %-----------PROGRAMMING SKILLS-----------
-\section{SKILLS}
+\section{Skills}
   \vspace{-4pt} 
   \begin{itemize}[leftmargin=0in, label={}]
     \small{\item{
