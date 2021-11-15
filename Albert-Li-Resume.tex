@@ -39,6 +39,7 @@
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
+\setlength{\footskip}{4.08003pt}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 \renewcommand{\mddefault}{l} % switch default weight to light
@@ -58,9 +59,7 @@
 
 % \definecolor{main}{RGB}{4, 99, 7} % emerald green
 \definecolor{main}{RGB}{46,139,87} % light green
-% \definecolor{main}{RGB}{255, 0, 191} % lyft pink
-% \definecolor{main}{RGB}{84,51,255} % stripe purple
-% \definecolor{main}{RGB}{246, 52, 63} 
+\definecolor{secondary}{RGB}{140,140,140}
 
 % Sections formatting
 \titleformat{\section}{
@@ -98,7 +97,7 @@
   \item
     \begin{tabular*}{1\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \large{\textbf{#1}} & \small{\color{main}\textbf{#2}} \\
-      \textit{\footnotesize#3} & \textit{\footnotesize#4} \\
+      \color{secondary}\textbf{\footnotesize#3} & \color{secondary}\textbf{\footnotesize#4} \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -113,7 +112,7 @@
   \vspace{-0pt}
     \item
     \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & \small{\color{main}\textbf{#2}} \\
+      \small\textbf{#1} & \small{\color{main}\textbf{#2}} \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -129,13 +128,12 @@
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \begin{document}
 
 %----------HEADING----------
 \begin{center}
-    \textbf{\fontsize{32}{36} \textnormal{Albert}\fontseries{ul}\selectfont{ Yiliang }\textnormal{Li}} \\ \vspace{8pt}
-    % \textbf{\fontsize{32}{36} \textnormal{Albert Li}} \\ \vspace{8pt}
+    % \textbf{\fontsize{32}{36} \textnormal{Albert}\fontseries{ul}\selectfont{ Yiliang }\textnormal{Li}} \\ \vspace{8pt}
+    \textbf{\fontsize{32}{36} \textnormal{Albert Li}} \\ \vspace{8pt}
     \small{
     \href{mailto:albert.yiliang@gmail.com}{albert.yiliang@gmail.com} $|$ 309-857-5018 $|$  
     \href{https://linkedin.com/in/albs}{linkedin.com/in/albs} $|$
@@ -145,29 +143,41 @@
 \vspace{-20pt}
 %-----------EDUCATION-----------
 \section{Education}
+  \vspace{-3pt}
   \resumeSubHeadingListStart
     \resumeSubheading
       {University of Illinois at Urbana-Champaign}{May '22} % $|$ \textnormal{Grainger College of Engineering}}{May 2022}
-      {\textnormal{\textbf{B.S. in Computer Science}, Minor in Statistics $|$ James Scholar Honors in College of Engineering}}
+      {\textnormal{\textbf{B.S. in Computer Science}, Minor in Statistics $|$ College of Engineering James Scholar Honors}}
       {\textnormal{GPA: \textbf{3.90} / 4.0}}
       \vspace{6pt}
 
-      % \small{Minor in Statistics $|$ James Scholar Honors}
-      \footnotesize{\textbf{Relevant Courses}{: Distributed Systems, Computer Security, Database Systems, UI Design, Algorithms, System Programming, Data Structures}}
+      \footnotesize{\textbf{Relevant Coursework}{: Distributed Systems, Communication Networks, Computer Security, Database Systems, Algorithms, Systems Programming, Data Structures, Computer Architecture, Software Design Studio, UI Design, Bioinformatics, Applied Machine Learning }}
     \vspace{-6pt}
   \resumeSubHeadingListEnd
 
 
 %-----------EXPERIENCE-----------
 \section{Experience}
+  \vspace{-3pt}
   \resumeSubHeadingListStart
+    \resumeSubheadingSmall
+      {Airkit} % Company
+      {January '22 --- April '22} % Date
+      {Software Engineer Intern --- Kotlin} % Position
+      {Redwood City, CA} % location
+      \resumeItemListStart
+        \resumeItem{Working on the backend team}
+      \resumeItemListEnd
+
     \resumeSubheadingSmall
       {Facebook} % Company
       {August '21 --- November '21} % Date
       {Software Engineer Intern --- React, JavaScript, GraphQL, Relay, Hack} % Position
-      {Menlo Park, CA} % location
+      {San Francisco, CA} % location
       \resumeItemListStart
-        \resumeItem{Working on the Facebook Stories team}
+        \resumeItem{Created the Reels viewer $0\rightarrow1$ product for Facebook and tested product across USA, India, Canada, and Mexico before global launch}
+        \resumeItem{Generated $100+$ million monthly active users and led development across multiple engineering and design teams}
+        \resumeItem{Built facebook.com/reel from scratch, integrated with bug reporting, blocking, liking, sharing, commenting, etc.}
       \resumeItemListEnd
       
     \resumeSubheadingSmall
@@ -199,7 +209,6 @@
       \resumeItemListStart
         \resumeItem{Designed Node.js backend cloud service to monitor radio networks, integrated with an Apache Kafka stream for real time notifications, Azure SQL Server, and Kubernetes }
         \resumeItem{Architected CI/CD pipeline for Node services in Docker and K8 clusters on Azure DevOps}
-        % \resumeItem{Assisted in building CI/CD pipeline for Azure SQL Server, Node.js, and mobile apps in Docker and K8 clusters on Azure DevOps, automating API unit testing and deployment to Google Play Store and Apple App Store}
         \resumeItem{Developed a web API used by data scientists to efficiently query files from Azure DataLake filesystem in C\# and .NET}
     \resumeItemListEnd
 
@@ -209,19 +218,17 @@
       {Software Engineering Co-Op --- Python, Angular, TypeScript, Flask, MySQL} % Position
       {Champaign, IL} % Location
       \resumeItemListStart
-        % \resumeItem{Increased efficiency of data lookup from minutes to seconds for 1100+ engineers daily by building an internal Angular web platform with a Python API, MySQL connection, and OAuth2 authentication }
-        \resumeItem{Built an internal data querying web tool and API used by 1000+ engineers with 20k+ daily queries that reduced data lookup time from 10+ minutes to seconds}
-        \resumeItem{Constructed custom interactive data visualizations of financial and equipment data}
+        \resumeItem{Built an internal data querying web tool and API used by $1000+$ engineers with $20k+$ daily queries that reduced data lookup time from $10+$ minutes to seconds}
       \resumeItemListEnd
 
-    \resumeSubheadingSmall
-      {Ameren} % Company
-      {May '19 --- August '19} % Date
-      {Software Engineering Intern --- Python, Angular, TypeScript, Flask, OracleDB, AWS} % Position
-      {Champaign, IL} % Location
-      \resumeItemListStart
-        \resumeItem{Modernized internal project management web dashboard for PMs and executives, replacing an older deprecated version}
-      \resumeItemListEnd
+    % \resumeSubheadingSmall
+    %   {Ameren} % Company
+    %   {May '19 --- August '19} % Date
+    %   {Software Engineering Intern --- Python, Angular, TypeScript, Flask, OracleDB, AWS} % Position
+    %   {Champaign, IL} % Location
+    %   \resumeItemListStart
+    %     \resumeItem{Modernized internal project management web dashboard for PMs and executives, replacing an older deprecated version}
+    %   \resumeItemListEnd
 
     \resumeSubheadingSmall
       {UIUC Department of Computer Science} % Company
@@ -229,31 +236,27 @@
       {Course Staff --- CS 196: Freshman Honors} % Position
       {Urbana, IL} % Location
       \resumeItemListStart
-        \resumeItem{Mentored 5 groups of students as Project Manager to produce full stack apps: mobile app giving safest walking routes in cities, a video transcription React web platform, mood tracking mental health web app, a crowd lending network, etc. }
-        % \resumeItem{Coached and organized weekly software development life cycle, agile processes, version control, and code style}
-        \resumeItem{Created and deployed website (\textbf{\href{https://cs196.cs.illinois.edu}{cs196.cs.illinois.edu}}) on Apache Server and built grading infrastructure for 200 students}
-        % \resumeItem{Managed 6 other staff members in building out class infrasturcture}
+        \resumeItem{Mentored 8 groups of students as Project Manager to produce full stack apps and machine learning projects}
+        \resumeItem{Created website (\textbf{\href{https://cs196.cs.illinois.edu}{cs196.cs.illinois.edu}}) on Apache Server and built grading infrastructure for $200+$ students}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
 \section{Projects}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{UIUC Diversity} $|$ \emph{Data visualization showing racial disparities of every major}}
-          {\textbf{\small{\href{https://lialbert.com/uiuc-diversity}{lialbert.com/uiuc-diversity}}}}
-          \resumeItemListStart
-            \resumeItem{Processed 15 years of data to build dynamic visualizations of demographics using d3.js, TypeScript, and Python}
-            % \resumeItem{Highlighted historical racial trends across colleges and majors through user interaction}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Tangram} $|$ \emph{Android/iOS social media app with hyperlocal video feeds}}
-          {\textbf{\small{\href{https://github.com/albearli/tangram}{github.com/albearli/tangram}}}}
-          \resumeItemListStart
-            \resumeItem{Utilized MySQL, Neo4j, Go, and Python on AWS to create 4-directional swiping of location-based videos on map}
-            % \resumeItem{ Developed RESTful API layer interfacing databases and identifying clusters of posts on map in Golang and Python}
-          \resumeItemListEnd
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {UIUC Diversity $|$ \color{secondary}{Data visualization showing racial disparities of every major}}
+      {\small{\href{https://lialbert.com/uiuc-diversity}{lialbert.com/uiuc-diversity}}}
+      \resumeItemListStart
+        \resumeItem{Processed 15 years of data to build dynamic visualizations of demographics using d3.js, TypeScript, and Python}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {Tangram $|$ \color{secondary}{Android/iOS social media app with hyperlocal video feeds}}
+      {\small{\href{https://github.com/albearli/tangram}{github.com/albearli/tangram}}}
+      \resumeItemListStart
+        \resumeItem{Utilized MySQL, Neo4j, Go, and Python on AWS to create 4-directional swiping of location-based videos on map}
+      \resumeItemListEnd
     \resumeSubHeadingListEnd
 
 %-----------PROGRAMMING SKILLS-----------
@@ -261,8 +264,8 @@
   \vspace{-4pt} 
   \begin{itemize}[leftmargin=0in, label={}]
     \small{\item{
-     \textbf{\hspace{13.77mm}  Languages}{: \ \ Python, C++, JavaScript, TypeScript, Java, SQL, Shell} \\
-     \textbf{Frameworks + Tools}{: \ \ React, Angular, GraphQL, Relay, Node.js, Flask, MySQL, MongoDB, Neo4j, Linux, Git, Kubernetes}}}
+      \textbf{\hspace{13.77mm}  Languages}{: \ \ Python, C++, JavaScript, TypeScript, Java, SQL, Shell} \\
+      \textbf{Frameworks + Tools}{: \ \ React, Angular, GraphQL, Relay, Node.js, Flask, MySQL, MongoDB, Neo4j, Linux, Git, Kubernetes}}}
  \end{itemize}
 
 %-------------------------------------------
