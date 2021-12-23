@@ -23,18 +23,8 @@
 \usepackage{xcolor}
 \input{glyphtounicode}
 
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[default]{raleway}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
+%----------FONT----------
 \usepackage[default]{lato}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -125,61 +115,100 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
 
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 
-%----------HEADING----------
+%------------HEADING-----------
 \begin{center}
-    % \textbf{\fontsize{32}{36} \textnormal{Albert}\fontseries{ul}\selectfont{ Yiliang }\textnormal{Li}} \\ \vspace{8pt}
-    \textbf{\fontsize{32}{36} \textnormal{Albert Li}} \\ \vspace{8pt}
-    \small{
-    \href{mailto:albert.yiliang@gmail.com}{albert.yiliang@gmail.com} $|$ 309-857-5018 $|$  
+  % \textbf{\fontsize{32}{36} \textnormal{Albert}\fontseries{ul}\selectfont{ Yiliang }\textnormal{Li}} \\ \vspace{8pt}
+  \textbf{\fontsize{32}{36} \textnormal{Albert Li}} \\ \vspace{8pt}
+  \small{
+    \href{mailto:albert.yiliang@gmail.com}{albert.yiliang@gmail.com} $|$ 309-857-5018 $|$
     \href{https://linkedin.com/in/albs}{linkedin.com/in/albs} $|$
     \href{https://lialbert.com}{www.lialbert.com}}
 \end{center}
-% \vspace*{-\baselineskip}
 \vspace{-20pt}
-%-----------EDUCATION-----------
-\section{Education}
-  \vspace{-3pt}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {University of Illinois at Urbana-Champaign}{May '22} % $|$ \textnormal{Grainger College of Engineering}}{May 2022}
-      {\textnormal{\textbf{B.S. in Computer Science}, Minor in Statistics $|$ College of Engineering James Scholar Honors}}
-      {\textnormal{GPA: \textbf{3.9} / 4.0}}
-      \vspace{6pt}
 
-      \footnotesize{\textbf{Relevant Coursework}{: Distributed Systems, Computer Security, Database Systems, Algorithms, Systems Programming, Data Structures, Computer Architecture, UI Design, Bioinformatics}}
-    \vspace{-6pt}
-  \resumeSubHeadingListEnd
+%-----------EDUCATION-----------
+
+\section{Education}
+\vspace{-3pt}
+\resumeSubHeadingListStart
+\resumeSubheading
+{University of Illinois at Urbana-Champaign}{May '22} % $|$ \textnormal{Grainger College of Engineering}}{May 2022}
+{\textnormal{\textbf{B.S. in Computer Science}, Minor in Statistics $|$ College of Engineering James Scholar Honors}}
+{\textnormal{GPA: \textbf{3.9} / 4.0}}
+\vspace{6pt}
+
+\footnotesize{\textbf{Relevant Coursework}{: Distributed Systems, Computer Security, Database Systems, Algorithms, Systems Programming, Data Structures, Computer Architecture, UI Design, Bioinformatics}}
+\vspace{-6pt}
+\resumeSubHeadingListEnd
 
 
 %-----------EXPERIENCE-----------
 \section{Experience}
-  \vspace{-3pt}
-  \resumeSubHeadingListStart
-    \resumeSubheadingSmall
-      {Facebook} % Company
-      {August '21 --- November '21} % Date
-      {Software Engineer Intern --- React, JavaScript, GraphQL, Relay, Hack} % Position
-      {San Francisco, CA} % location
-      \resumeItemListStart
-        \resumeItem{Working on the Stories team building new products}
-      \resumeItemListEnd
-      
-    \resumeSubheadingSmall
-      {Salesforce: Tableau Software} % Company
-      {May '21 --- August '21} % Date
-      {Software Engineer Intern --- C++} % Position
-      {Seattle, WA} % Location
-      \resumeItemListStart
-        \resumeItem{Added core features to new API product creating Tableau visualizations declaratively}
-        \resumeItem{Spearheaded telemetry infrastructure tracking product data for insights in customer usage and adoption}
-        % \resumeItem{Created end-to-end tests and unit tests for CI/CD pipeline}
-      \resumeItemListEnd
-      
+\vspace{-3pt}
+\resumeSubHeadingListStart
+\resumeSubheadingSmall
+{Facebook} % Company
+{August '21 --- November '21} % Date
+{Software Engineer Intern --- React, JavaScript, GraphQL, Relay, PHP/Hack} % Position
+{San Francisco, CA} % location
+\resumeItemListStart
+\resumeItem{Working on the Stories team building new products}
+\resumeItemListEnd
+
+\resumeSubheadingSmall
+{Salesforce: Tableau Software} % Company
+{May '21 --- August '21} % Date
+{Software Engineer Intern --- C++} % Position
+{Seattle, WA} % Location
+\resumeItemListStart
+\resumeItem{Added core features to public Tableau Viz API allowing users to create visualizations declaratively for dashboards}
+\resumeItem{Spearheaded telemetry infrastructure tracking product data for insights in customer usage and adoption}
+\resumeItemListEnd
+
+\resumeSubheadingSmall
+{Motorola Solutions} % Company
+{June '20 --- May '21} % Date
+{Software Engineer Intern --- JavaScript, Express, Apache Kafka, SQL Server, Kubernetes} % Position
+{Champaign, IL} % Location
+\resumeItemListStart
+\resumeItem{Designed Node.js backend cloud service to monitor radio networks, integrated with an Apache Kafka stream for real time notifications, Azure SQL Server, and Kubernetes }
+\resumeItem{Architected CI/CD pipeline for Node services in Docker and K8 clusters on Azure DevOps}
+\resumeItemListEnd
+
+\resumeSubheadingSmall
+{Caterpillar} % Company
+{August '19 --- May '20} % Date
+{Software Engineering Co-Op --- Python, Angular, TypeScript, Flask, MySQL} % Position
+{Champaign, IL} % Location
+\resumeItemListStart
+\resumeItem{Built an internal data querying web tool and API used by $1000+$ engineers with $20k+$ daily queries that reduced data lookup time from $10+$ minutes to seconds}
+\resumeItemListEnd
+
+\resumeSubheadingSmall
+{Ameren} % Company
+{May '19 --- August '19} % Date
+{Software Engineering Intern --- Python, Angular, TypeScript, Flask, OracleDB, AWS} % Position
+{Champaign, IL} % Location
+\resumeItemListStart
+\resumeItem{Modernized internal project management web dashboard for PMs and executives, replacing an older deprecated version}
+\resumeItemListEnd
+
+\resumeSubheadingSmall
+{UIUC Department of Computer Science} % Company
+{January '20 --- May '21} % Date
+{Course Staff --- CS 196: Freshman Honors} % Position
+{Urbana, IL} % Location
+\resumeItemListStart
+\resumeItem{Mentored 8 groups of students as Project Manager to produce full stack apps and machine learning projects}
+\resumeItem{Created website (\textbf{\href{https://cs196.cs.illinois.edu}{cs196.cs.illinois.edu}}) on Apache Server and built grading infrastructure for $200+$ students}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
 % -----------Multiple Positions Heading-----------
 %    \resumeSubSubheading
 %     {Software Engineer I}{Oct 2014 - Sep 2016}
@@ -190,72 +219,32 @@
 %    \resumeSubHeadingListEnd
 %-------------------------------------------
 
-    \resumeSubheadingSmall
-      {Motorola Solutions} % Company
-      {June '20 --- May '21} % Date
-      {Software Engineer Intern --- JavaScript, Express, Apache Kafka, SQL Server, Kubernetes} % Position
-      {Champaign, IL} % Location
-      \resumeItemListStart
-        \resumeItem{Designed Node.js backend cloud service to monitor radio networks, integrated with an Apache Kafka stream for real time notifications, Azure SQL Server, and Kubernetes }
-        \resumeItem{Architected CI/CD pipeline for Node services in Docker and K8 clusters on Azure DevOps}
-        % \resumeItem{Developed a web API used by data scientists to efficiently query files from Azure DataLake filesystem in C\# and .NET}
-    \resumeItemListEnd
-
-    \resumeSubheadingSmall
-      {Caterpillar} % Company
-      {August '19 --- May '20} % Date
-      {Software Engineering Co-Op --- Python, Angular, TypeScript, Flask, MySQL} % Position
-      {Champaign, IL} % Location
-      \resumeItemListStart
-        \resumeItem{Built an internal data querying web tool and API used by $1000+$ engineers with $20k+$ daily queries that reduced data lookup time from $10+$ minutes to seconds}
-      \resumeItemListEnd
-
-    \resumeSubheadingSmall
-      {Ameren} % Company
-      {May '19 --- August '19} % Date
-      {Software Engineering Intern --- Python, Angular, TypeScript, Flask, OracleDB, AWS} % Position
-      {Champaign, IL} % Location
-      \resumeItemListStart
-        \resumeItem{Modernized internal project management web dashboard for PMs and executives, replacing an older deprecated version}
-      \resumeItemListEnd
-
-    \resumeSubheadingSmall
-      {UIUC Department of Computer Science} % Company
-      {January '20 --- May '21} % Date
-      {Course Staff --- CS 196: Freshman Honors} % Position
-      {Urbana, IL} % Location
-      \resumeItemListStart
-        \resumeItem{Mentored 8 groups of students as Project Manager to produce full stack apps and machine learning projects}
-        \resumeItem{Created website (\textbf{\href{https://cs196.cs.illinois.edu}{cs196.cs.illinois.edu}}) on Apache Server and built grading infrastructure for $200+$ students}
-      \resumeItemListEnd
-
-  \resumeSubHeadingListEnd
-
-%-----------PROJECTS-----------
+%-------------PROJECTS-----------------
 \section{Projects}
-  \resumeSubHeadingListStart
-    \resumeProjectHeading
-      {UIUC Diversity $|$ \color{secondary}{Data visualization showing racial disparities of every major}}
-      {\small{\href{https://lialbert.com/uiuc-diversity}{lialbert.com/uiuc-diversity}}}
-      \resumeItemListStart
-        \resumeItem{Processed 15 years of data to build dynamic visualizations of demographics using d3.js, TypeScript, and Python}
-      \resumeItemListEnd
-    \resumeProjectHeading
-      {Tangram $|$ \color{secondary}{Android/iOS social media app with hyperlocal video feeds}}
-      {\small{\href{https://github.com/albearli/tangram}{github.com/albearli/tangram}}}
-      \resumeItemListStart
-        \resumeItem{Utilized MySQL, Neo4j, Go, and Python on AWS to create 4-directional swiping of location-based videos on map}
-      \resumeItemListEnd
-    \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{UIUC Diversity $|$ \color{secondary}{Data visualization showing racial disparities of every major}}
+{\small{\href{https://lialbert.com/uiuc-diversity}{lialbert.com/uiuc-diversity}}}
+\resumeItemListStart
+\resumeItem{Processed 15 years of data to build dynamic visualizations of demographics using d3.js, TypeScript, and Python}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{Tangram $|$ \color{secondary}{Android/iOS social media app with hyperlocal video feeds}}
+{\small{\href{https://github.com/albearli/tangram}{github.com/albearli/tangram}}}
+\resumeItemListStart
+\resumeItem{Utilized MySQL, Neo4j, Go, and Python on AWS to create 4-directional swiping of location-based videos on map}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
 
 %-----------PROGRAMMING SKILLS-----------
 \section{Skills}
-  \vspace{-4pt} 
-  \begin{itemize}[leftmargin=0in, label={}]
-    \small{\item{
-      \textbf{\hspace{13.77mm}  Languages}{: \ \ Python, C++, JavaScript, TypeScript, Java, SQL, Shell} \\
-      \textbf{Frameworks + Tools}{: \ \ React, Angular, GraphQL, Relay, Node.js, Flask, MySQL, MongoDB, Neo4j, Linux, Git, Kubernetes}}}
- \end{itemize}
+\vspace{-4pt}
+\begin{itemize}[leftmargin=0in, label={}]
+  \small{\item{
+        \textbf{\hspace{13.77mm}  Languages}{: \ \ Python, C++, JavaScript, TypeScript, Java, SQL, Shell} \\
+        \textbf{Frameworks + Tools}{: \ \ React, Angular, GraphQL, Relay, Node.js, Flask, MySQL, MongoDB, Neo4j, Linux, Kubernetes}}}
+\end{itemize}
 
 %-------------------------------------------
 \end{document}
