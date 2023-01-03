@@ -86,7 +86,7 @@
   \vspace{-0pt}
   \item
     \begin{tabular*}{1\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \large{\textbf{#1}} & \small{\color{main}\textbf{#2}} \\
+      \textbf{#1} & \small{\color{main}\textbf{#2}} \\
       \color{secondary}\textbf{\footnotesize#3} & \color{secondary}\textbf{\footnotesize#4} \\
     \end{tabular*}\vspace{-7pt}
 }
@@ -122,10 +122,10 @@
 %------------HEADING-----------
 \begin{center}
   % \textbf{\fontsize{32}{36} \textnormal{Albert}\fontseries{ul}\selectfont{ Yiliang }\textnormal{Li}} \\ \vspace{8pt}
-  \textbf{\fontsize{32}{36} \textnormal{Albert Li}} \\ \vspace{8pt}
+  \textbf{\fontsize{28}{32} \textnormal{Albert Li}} \\ \vspace{8pt}
   \small{
-    \href{mailto:albert.yiliang@gmail.com}{albert.yiliang@gmail.com} $|$ 309-857-5018 $|$
-    \href{https://linkedin.com/in/albs}{linkedin.com/in/albs} $|$
+    \href{mailto:albert.yiliang@gmail.com}{albert.yiliang@gmail.com} $\cdot$ 309-857-5018 $\cdot$
+    \href{https://linkedin.com/in/albs}{linkedin.com/in/albs} $\cdot$
     \href{https://lialbert.com}{www.lialbert.com}}
 \end{center}
 \vspace{-20pt}
@@ -139,68 +139,70 @@
 \resumeSubheadingSmall
 {Stripe} % Company
 {July '22 --- Present} % Date
-{Software Engineer} % Position
+{Software Engineer --- Ruby, TypeScript, React} % Position
 {Seattle, WA} % Location
 \resumeItemListStart
-\resumeItem{Incoming SWE}
+\resumeItem{Conducted ML experiments to optimize buyer conversion within Stripe Elements, resulting in an 8.7\% increase LPM usage and an additional \$134MM in LPM payment volume}
+\resumeItem{Led integration of Meta Pay and StripeJS on cross company project, developing a new payment method for elements and checkout}
+\resumeItem{Engineered a new Stripe Element for Payment Messaging embedding, aiming to boost usage for BNPLs such as Afterpay, Klarna, and Affirm}
 \resumeItemListEnd
 
 \resumeSubheadingSmall
 {Airkit} % Company
 {January '22 --- April '22} % Date
-{Software Engineer Intern --- Kotlin, Python, Terraform, Kubernetes, AWS} % Position
+{Engineering Intern --- Python, Kotlin, AWS, Terraform, Kubernetes} % Position
 {Redwood City, CA} % Location
 \resumeItemListStart
-\resumeItem{Added rate limiting and billing/metering logic to customers in a Kotlin service}
-\resumeItem{Enforced real time quota for customers to prevent overuse of services, such as Salesforce, Twilio, etc.}
-\resumeItem{Created an internal tool run on AWS Lambda and webhooks to enforce Github compliance on all repos in organization}
+\resumeItem{Refined infrastructure to link Spinnaker deployments and AWS CodeBuilds with Jira issues}
+\resumeItem{Created an artifactory-packaged tool run on AWS Lambda and webhooks to enforce audit compliance, saving hours}
 \resumeItemListEnd
 
 \resumeSubheadingSmall
 {Facebook} % Company
 {August '21 --- November '21} % Date
-{Software Engineer Intern --- React, JavaScript, GraphQL, Relay, PHP/Hack} % Position
+{Software Engineer Intern --- JavaScript, React, PHP/Hack, GraphQL, Relay} % Position
 {San Francisco, CA} % location
 \resumeItemListStart
-\resumeItem{Created Facebook Reels viewer $0 \rightarrow 1$ product and tested across USA, India, Canada, and Mexico before global launch}
-\resumeItem{Built facebook.com/reel from scratch with bug reporting, sharing across FB platforms, blocking, liking, commenting, etc.}
-\resumeItem{Generated $100+$ million monthly active users and led development across multiple engineering and design teams}
+\resumeItem{Created Facebook Reels for desktop $0 \rightarrow 1$ product and tested in USA, India, Canada, and Mexico before global launch}
+\resumeItem{Built \textbf{facebook.com/reel} from scratch with bug reporting, sharing across FB/IG platforms, blocking/following, liking, commenting, hashtags, audio, etc.}
+\resumeItem{Generated $50+$ million monthly active users and collaborated development across engineering and design teams}
 \resumeItemListEnd
 
 \resumeSubheadingSmall
-{Salesforce: Tableau Software} % Company
+{Salesforce $|$ Tableau Software} % Company
 {May '21 --- August '21} % Date
 {Software Engineer Intern --- C++} % Position
 {Seattle, WA} % Location
 \resumeItemListStart
 \resumeItem{Added core features to public Tableau Viz API allowing users to create visualizations declaratively for dashboards}
-\resumeItem{Spearheaded telemetry and logging infrastructure tracking product data for insights in customer usage and adoption}
+\resumeItem{Spearheaded telemetry and logging infrastructure tracking product data for insights and maintenance in customer usage}
 \resumeItemListEnd
 
 \resumeSubheadingSmall
 {Motorola Solutions} % Company
 {June '20 --- May '21} % Date
-{Software Engineer Intern --- JavaScript, Express, Apache Kafka, SQL Server, Kubernetes} % Position
-{Champaign, IL} % Location
+{Software Engineer Intern --- JavaScript, Express, Apache Kafka, SQL Server, Kubernetes, Azure} % Position
+{} % Location
 \resumeItemListStart
 \resumeItem{Designed Node.js backend cloud service to monitor radio networks, integrated with an Apache Kafka stream for real time notifications, Azure SQL Server for caching, and Kubernetes for automating deployment}
 \resumeItem{Architected CI/CD pipeline for Node services in Docker and K8 clusters on Azure DevOps}
+\resumeItem{Engineered a standalone API in C\# to fetch TB's of radio usage data from Azure Data Lake}
 \resumeItemListEnd
 
 \resumeSubheadingSmall
 {Caterpillar} % Company
 {August '19 --- May '20} % Date
-{Software Engineering Co-Op --- Python, Angular, TypeScript, Flask, MySQL} % Position
-{Champaign, IL} % Location
+{Software Engineering Co-Op --- Python, TypeScript, Angular, Flask, MySQL} % Position
+{} % Location
 \resumeItemListStart
-\resumeItem{Built an internal data querying web tool and API used by $1000+$ engineers with $20k+$ daily queries that reduced data lookup time from $10+$ minutes to seconds}
+\resumeItem{Authored an internal data querying web tool and API used by $2000+$ engineers with $200k+$ queries that reduced data lookup time from $10+$ minutes to seconds}
 \resumeItemListEnd
 
 \resumeSubheadingSmall
 {Ameren} % Company
 {May '19 --- August '19} % Date
-{Software Engineering Intern --- Python, Angular, TypeScript, Flask, OracleDB, AWS} % Position
-{Champaign, IL} % Location
+{Software Engineering Intern --- Python, TypeScript, Angular, Flask, OracleDB, AWS} % Position
+{} % Location
 \resumeItemListStart
 \resumeItem{Modernized internal project management web dashboard for PMs and executives, replacing an older deprecated version}
 \resumeItemListEnd
@@ -234,14 +236,14 @@
 % {UIUC Diversity $|$ \color{secondary}{Data visualization showing racial disparities of every major}}
 % {\small{\href{https://lialbert.com/uiuc-diversity}{lialbert.com/uiuc-diversity}}}
 % \resumeItemListStart
-% \resumeItem{Processed 15 years of data to build dynamic visualizations of demographics using d3.js, TypeScript, and Python}
+% \resumeItem{Processed 15+ years of data to build dynamic visualizations of demographics using d3.js, TypeScript, and Python}
 % \resumeItemListEnd
 
 % \resumeProjectHeading
 % {Tangram $|$ \color{secondary}{Android/iOS social media app with hyperlocal video feeds}}
 % {\small{\href{https://github.com/albearli/tangram}{github.com/albearli/tangram}}}
 % \resumeItemListStart
-% \resumeItem{Utilized MySQL, Neo4j, Go, and Python on AWS to create 4-directional swiping of location-based videos on map}
+% \resumeItem{Utilized MySQL, Neo4j, Go, AWS, and Python to create 4-directional swiping of location-based videos on map}
 % \resumeItemListEnd
 % \resumeSubHeadingListEnd
 
@@ -250,9 +252,9 @@
 \vspace{-3pt}
 \resumeSubHeadingListStart
 \resumeSubheading
-{University of Illinois at Urbana-Champaign}{May '22} % $|$ \textnormal{Grainger College of Engineering}}{May 2022}
-{\textnormal{\textbf{B.S. in Computer Science}, Minor in Statistics $|$ College of Engineering James Scholar Honors}}
-{\textnormal{GPA: \textbf{3.9} / 4.0}}
+{University of Illinois at Urbana-Champaign}{May '22}
+{\textnormal{\textbf{B.S. in Computer Science}, High Honors $|$ Minor in Statistics}}
+{\textnormal{GPA: \textbf{3.88} / 4.0}}
 \resumeSubHeadingListEnd
 
 %-----------PROGRAMMING SKILLS-----------
@@ -260,8 +262,8 @@
 \vspace{-4pt}
 \begin{itemize}[leftmargin=0in, label={}]
   \small{\item{
-        \textbf{\hspace{13.77mm}  Languages}{: \ \ Python, C++, JavaScript, TypeScript, Java, Kotlin, SQL, Shell, HTML, CSS} \\
-        \textbf{Frameworks + Tools}{: \ \ React, Angular, GraphQL, Relay, Node.js, Flask, MySQL, MongoDB, Neo4j, Linux, Kubernetes}}}
+                \textbf{\hspace{13.77mm}  Languages}{: \ \ Python, C++, JavaScript, TypeScript, Java, SQL, Shell} \\
+                \textbf{Frameworks + Tools}{: \ \ React, Angular, GraphQL, Relay, Node.js, Flask, MySQL, MongoDB, AWS, Linux, Kubernetes}}}
 \end{itemize}
 
 
